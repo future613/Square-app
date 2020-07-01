@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/initialize.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <title>issue</title>
+    <style>
+        
+        html{
+            background-color: #35b0ab;
+        }
+        .nav{
+            width: 6.9rem;
+            margin: 0 auto;
+            margin-bottom: 0.5rem;
+        }
+        .list li{
+            float: left;
+            margin-right: 0.3rem;
+        }
+        .list li:last-child{
+            margin-right: 0;
+            float: right;
+        }
+        .list li a{
+            font-size: 0.3rem;
+            color: #fff;
+        }
+        .list li a span{
+            font-size: 0.3rem;
+            color: #fff;
+        }
+        .banner{
+            width: 6.9rem;
+            margin: 0 auto;
+            margin-bottom: 3.5rem;
+        }
+        .banner>img{
+            display: block;
+            width: 6.9rem;
+            box-shadow: 0 0 10px #000;
+            border-radius: 10px;
+            margin-bottom: 0.2rem;
+        }
+        .banner>p{
+            display: block;
+            float: left;
+            font-size: 0.3rem;
+            color: #fff;
+            margin-right: 0.3rem;
+        }
+        .banner>a{
+            display: block;
+            width: 1.4rem;
+            border-radius: 5px;
+            float: left;
+            font-size: 0.24rem;
+            color: #fff;
+            background-color: #f37a5b;
+            line-height: 2;
+            text-align: center;
+        }
+        .section{
+            width: 6.9rem;
+            margin: 0 auto;
+            margin-bottom: 1.5rem;
+        }
+        .list1 li{
+            float: left;
+            width: 1.42rem;
+            margin-left: 0.7rem;
+            font-size: 0.26rem;
+            color: #fff;
+            text-align: center;
+        }
+        .list1 li a{
+            display: block;
+            width: 1.42rem;
+            padding-top: 1.46rem;
+        }
+        .list1 li:nth-child(1) a {
+            background-image: url(./images/issue-sec1_10.jpg);
+            background-repeat: no-repeat;
+            background-size: 1.42rem  1.36rem;
+        }
+        .list1 li:nth-child(2) a {
+            background-image: url(./images/issen-sec2_10.jpg);
+            background-repeat: no-repeat;
+            background-size: 1.42rem  1.36rem;
+        }
+        .list1 li:nth-child(3) a {
+            background-image: url(./images/issen-sec3_10.jpg);
+            background-repeat: no-repeat;
+            background-size: 1.42rem  1.36rem;
+        }
+        .close{
+         width: 0.66rem;
+         line-height: 0.66rem;
+         border-radius: 50%;
+         text-align: center;
+         margin: 0 auto;
+         background-color: rgba(255,255,255,0.3);
+        }
+        .close span{
+            display: block;
+         font-size: 0.4rem;
+         font-weight: bold;
+         color: #35b0ab;
+        }
+    </style>
+</head>
+<body>
+   <div class="warp">
+       <div class="nav">
+           <ul class="list clearfix">
+               <li><a href="#1"><span class="iconfont icon-scan"></span></a></li>
+               <li><a href="#1">用电脑写文章 , 整屋</a></li>
+               <li><a href="#1">草稿箱</a></li>
+           </ul>
+       </div>
+       <div class="banner">
+           <img src="./images/issue-bgc_03.jpg" alt="">
+           <p>每天一张生活日常，夏天必备生活好物</p>
+           <a href="#1">点击参与</a>
+       </div>
+       <div class="section">
+           <ul class="list1 clearfix">
+               <li><a href="./issue-text.html"></a>发布文章</li>
+               <li><a href="./issue-pic.html"></a>发布图片</li>
+               <li><a href="./issue-rome.html"></a>发布整屋</li>
+           </ul>
+       </div>
+       <div class="close"><span class="iconfont icon-guanbi"></span>
+           
+       </div>
+   </div> 
+   <script>
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px' 
+   document.querySelector(".close").onclick = function(){
+       window.history.back()
+   }
+   </script>
+</body>
+</html>

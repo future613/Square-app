@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/initialize.css">
+    <title>comment</title>
+    <style>
+ 
+    body{
+        background-color: #f0eff5;      
+    }
+    
+    .warp{
+        width: 100vw;
+        padding-bottom: 1rem;
+    }
+        .header{
+            width: 6.9rem;
+            margin:0 auto;
+        }
+        .nav{
+            width: 6.9rem;
+            padding-bottom: 0.2rem;
+            border-bottom: 1px solid gray; 
+            margin-bottom: 0.2rem;
+        }
+        .nav ul{
+           width: 6.9rem;
+           margin: 0 auto;
+        }
+        .nav ul li{
+            float: left;
+            margin-left: 0.3rem;
+            position: relative;
+        }
+        .nav ul li:first-child{
+            margin-right: 1.8rem;
+        }
+        .nav ul li:nth-child(3){
+            margin-right: 1.8rem;
+        }
+        .nav ul li a{
+            font-size: 0.3rem;
+            color: #777;
+        }
+        .nav ul li p{
+            display: block;
+            width: 0.5rem;
+            height: 3px;
+            background-color: #000;
+            position: absolute;
+            top:1.48rem;
+            left: 0.06rem;
+        }
+        .nav ul li span{
+            font-size:0.34rem ;
+            color: #000;
+        }
+        .search{
+            display: block;
+            width: 6.1rem;
+            outline: 0;
+            background-color: #dddee2;
+            line-height: 0.56rem;
+            border: 0;
+            border-radius: 5px;
+            margin-bottom: 0.3rem;
+            padding-left: 0.8rem;
+            background-image: url(./images/search_12.jpg);
+            background-repeat: no-repeat;
+            background-position: 0.2rem center;
+            background-size: 0.4rem 0.4rem;
+        }
+        .menu{
+            width: 6.9rem;
+            margin-bottom: 0.3rem;
+        }
+        .menu ul li{
+            width: 1.45rem;
+            float: left;
+            font-size: 0.2rem;
+            text-align: center;
+            margin-left: 0.36rem;
+            color: gray;
+        }
+        .menu ul li:first-child{
+            margin-left: 0;
+        }
+        .menu ul li a{
+            display: block;
+            width: 1.45rem;
+            height: 1.33rem;
+            border-radius: 50%;
+            margin-bottom: 0.2rem;
+            background-size: 100% 100%;
+        }
+        .menu ul li:first-child a{
+            background-image: url(./images/icon.png);
+        }
+        .menu ul li:nth-child(2) a{
+            background-image: url(./images/icon1.png);  
+        }
+        .menu ul li:nth-child(3) a{
+            background-image: url(./images/icon2.png);  
+        }
+        .menu ul li:nth-child(4) a{
+            background-image: url(./images/icon3.png); 
+        }
+        .banner{
+            width: 100vw;
+        }
+        .banner>img{
+            width: 100vw;
+        }
+        .section{
+            width: 6.9rem;
+            margin: 0 auto;
+           
+        }
+        .section .bgc{
+            background-color: #c96036;
+        }
+        .headpic{
+            display: block;
+            width: 0.58rem;
+            border-radius: 50%;
+            float: left;
+            margin-right: 0.2rem;
+            margin-bottom: 0.2rem;
+        }
+        .headname{
+            display: block;
+            float: left;
+            font-size: 0.3rem;
+            color: #000;
+            margin-bottom: 0.2rem;
+            margin-top: 0.1rem;
+            
+        }
+        .attention{
+            display: block;
+            width: 1rem;
+            float: right;
+            background-color: #000;
+            color: #fff;
+            font-size: 0.16rem;
+            line-height: 2;
+            text-align: center;
+            border-radius: 0.22rem;
+            margin-top: 0.1rem;
+        }
+        .sectionpic{
+            display: block;
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 0.2rem;
+        }
+        .contant{
+            width: 100%;
+            font-size: 0.3rem;
+            line-height: 1.5;
+        }
+        .footer-menu{
+            width: 100vw;
+            background-color: #f1eef5;
+            position:fixed; 
+            bottom: 0; 
+            padding: 0.1rem 0.6rem;       
+        }
+       
+        .list3 li{
+            width: 0.7rem;
+        float: left;
+        margin-right: 0.6rem;
+        font-size: 0.26rem;
+        color: #666;
+        text-align: center;
+        }
+        .list3 li a{
+            display: block;
+            padding-top: 0.8rem;
+        }
+        .list3 li:nth-child(1){
+            background-image: url(./images/index2@2x.png);
+            background-repeat: no-repeat;
+            background-size: 0.7rem 0.7rem;
+        }
+        .list3 li:nth-child(2){
+            background-image: url(./images/block3.png);
+            background-repeat: no-repeat;
+            background-size: 0.7rem 0.7rem;
+        }
+        .list3 li:nth-child(3) a{
+            display: block;
+            width: 0.9rem;
+            padding-top: 0.9rem;
+        }
+        .list3 li:nth-child(3){
+            width: 0.9rem;
+            background-image: url(./images/footer-menu3_03.jpg);
+            background-repeat: no-repeat;
+            background-size: 0.9rem 0.9rem;
+        }
+        .list3 li:nth-child(4){
+            background-image: url(./images/black1.png);
+            background-repeat: no-repeat;
+            background-size: 0.7rem 0.7rem;
+        }
+        .list3 li:nth-child(5){
+            background-image: url(./images/block4.png);
+            background-repeat: no-repeat;
+            background-size: 0.7rem 0.7rem;
+        }
+       
+    </style>
+</head>
+<body>
+ <div class="warp">
+    <div class="header">
+        <div class="nav">
+            <ul class="list1 clearfix">
+                <li><span class="iconfont icon-tixing"></span></li>
+                <li><a href="./attention.html">关注</a>
+                <p></p></li>
+                <li><a href="#2">推荐</a>
+                <p></p></li>
+                <li><span class="iconfont icon-xinxi"></span></li>
+            </ul>
+        </div>
+        <input class="search" type="text" placeholder="大家都在搜:出租屋如何解决收纳">
+        <div class="menu clearfix">
+            <ul>
+                <li><a href="./create.html"></a>智能生成</li>
+                <li><a href="./look.html"></a>看图片</li>
+                <li><a href="./case.html"></a>整屋案例</li>
+                <li><a href="./topic.html"></a>话题讨论</li>
+            </ul>  
+        </div>
+    </div>  
+        <div class="banner"><img src="./images/img1.png" alt=""></div>  
+        <div class="section"></div>
+    </div>  
+    <div class="footer">
+        <div class="footer-menu">
+            <ul class="list3 clearfix">
+                <li><a href="./comment.html"></a>首页</li>
+                <li><a href="./finish.html"></a>装修</li>
+                <li><a href="./issue.html"></a></li>
+                <li><a href="./shopping.html"></a>商城</li>
+                <li><a href="./mine.html"></a>我的</li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/zepto.min.js"></script>
+<script src="./js/touch.js"></script>
+        <script>
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px' 
+            
+            var MyArr = [
+                { headpic : "./images/headpic_15.jpg",
+                 headName : "穆尼的二黑",
+                 sectionPic :"./images/img2.png",
+                 contant :"简约的风格如何搭建有质感和色彩的房屋"
+                },
+                {
+                    headpic : "./images/headpic_15.jpg",
+                 headName : "穆尼的二黑",
+                 sectionPic :"./images/img2.png",
+                 contant :"简约的风格如何搭建有质感和色彩的房屋"
+                }
+                ,
+                {
+                    headpic : "./images/headpic_15.jpg",
+                 headName : "穆尼的二黑",
+                 sectionPic :"./images/img2.png",
+                 contant :"简约的风格如何搭建有质感和色彩的房屋"
+                }
+            ]
+        
+
+
+            MyArr.forEach(function (val,ind){
+                    NewDiv = $("<div>");
+                    NewDiv.html(`<img class="headpic" src='${val.headpic}' /><span class="headname" >${val.headName}</span><a class="attention" href="#1">关注</a><img class="sectionpic" src='${val.sectionPic}' /><p class="contant">${val.contant}</p>`)
+                    $(".section").append(NewDiv)
+                    NewDiv.css("margin-bottom","0.8rem")
+            })
+
+            $(".nav ul li:nth-child(2) p").hide();
+  $(".nav ul li a").tap(function(){
+   $(this).siblings("p").show().parent("li").siblings("li").find("p").hide();
+  })
+
+
+  var num = false
+  $(".attention").tap(function(){
+      if(!num){
+    $(this).addClass("bgc")
+    $(this).text("已关注")
+    num = true
+      }
+      else{
+        $(this).removeClass("bgc")
+    $(this).text("关注")
+    num = false
+      }
+     
+  })
+
+
+          
+        </script>   
+</body>
+</html>
+
+
+
+
+ 
+

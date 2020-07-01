@@ -1,0 +1,52 @@
+
+        .footer-menu{
+            width: 100vw;
+            background-color: #f1eef5;
+            position:fixed; 
+            bottom: 0; 
+            padding: 0.1rem 0.6rem;       
+        }
+       
+        .list3 li{
+            width: 0.7rem;
+        float: left;
+        margin-right: 0.6rem;
+        font-size: 0.26rem;
+        color: #666;
+        text-align: center;
+        }
+        .list3 li a{
+            display: block;
+            padding-top: 0.8rem;
+        }
+        .list3 li:nth-child(1){
+            background-image: url(./images/index2@2x.png);
+            background-repeat: no-repeat;
+            background-size: 0.7rem 0.7rem;
+        }
+        .list3 li:nth-child(2){
+            background-image: url(./images/block3.png);
+            background-repeat: no-repeat;
+            background-size: 0.7rem 0.7rem;
+        }
+        .list3 li:nth-child(3) a{
+            display: block;
+            width: 0.9rem;
+            padding-top: 0.9rem;
+        }
+        .list3 li:nth-child(3){
+            width: 0.9rem;
+            background-image: url(./images/footer-menu3_03.jpg);
+            background-repeat: no-repeat;
+            background-size: 0.9rem 0.9rem;
+        }
+        .list3 li:nth-child(4){
+            background-image: url(./images/black1.png);
+            background-repeat: no-repeat;
+            background-size: 0.7rem 0.7rem;
+        }
+        .list3 li:nth-child(5){
+            background-image: url(./images/block4.png);
+            background-repeat: no-repeat;
+            background-size: 0.7rem 0.7rem;
+        }

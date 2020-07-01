@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/initialize.css">
+    <title>shopping</title>
+    <style>
+ 
+    html{
+        background-color: #fff;
+    }
+    .header{
+        width: 100vw;
+        background-color: #f0eff5;
+    }
+    .banner{
+        width: 100vw;
+    }
+    .banner>img{
+        width: 100vw;
+    }
+    .menu{
+        width: 6.1rem;
+        background-color: #fff;
+        border-radius: 10px;
+        position: relative;
+        top:-0.6rem;
+        margin: 0 auto;
+        padding: 0.4rem 0.3rem;
+    }
+    
+    .menu ul li{
+        float: left;
+        width: 1.5rem;
+        margin-bottom: 0.3rem;
+        padding-top: 1rem;
+        font-size: 0.3rem;
+        text-align: center;
+        background-image: url(./images/menu1_07.jpg);
+        background-repeat: no-repeat;
+        background-position: center 0;
+        background-size: 0.8rem 0.9rem;
+    }
+    .menu ul li:nth-child(2){
+        background-image: url(./images/menu2_09.jpg);
+    }
+    .menu ul li:nth-child(3){
+        background-image: url(./images/menu3_09.jpg);
+    }
+    .menu ul li:nth-child(4){
+        background-image: url(./images/menu4_10.jpg);
+    }
+    .menu ul li:nth-child(5){
+        background-image: url(./images/menu5_16.jpg);
+    }
+    .menu ul li:nth-child(6){
+        background-image: url(./images/menu6_16.jpg);
+    }
+    .menu ul li:nth-child(7){
+        background-image: url(./images/menu7_16.jpg);
+    }
+    .menu ul li:nth-child(8){
+        background-image: url(./images/menu8_16.jpg);
+    }
+   .discount{
+       width: 6.9rem;
+       background-color: #cda275;
+       padding:0.2rem 0.3rem;
+       padding-bottom: 0.8rem;
+       margin-bottom: 0.3rem;
+   }
+   .discount h3{
+       text-align: center;
+       font-size: 0.4rem;
+       color: #000;
+       margin-bottom: 0.2rem;
+   }
+   .list1 li{
+       width: 2.23rem;
+       height: 1.5rem;
+       float: left;
+       margin-right: 0.1rem;
+       border-radius: 10px;
+       background-color: #fff;
+   }
+   .list1 li:last-child{
+       margin-right: 0;
+   }
+   .list1 li img{
+    display: block;
+    width: 2rem;
+       height: 1.2rem;
+       margin: 0.15rem auto;
+   }
+   .list1 li span{
+       display: block;
+       text-align: center;
+       margin-top: 0.2rem;
+       font-size: 0.34rem;
+       font-weight: bold;
+       color: #bc4c38;
+   }
+   .section{
+       width: 100vw;
+       background-color: #fff;
+       margin-bottom: 0.3rem;
+   }
+   h2{
+       width: 1.4rem;
+       padding-left: 0.4rem;
+       font-size: 0.26rem;
+       color: #000;
+       margin: 0 auto;
+       background-image: url(./images/logo1_55.jpg);
+       background-repeat: no-repeat;
+       background-position: 0 center;
+       background-size: 0.33rem 0.26rem;
+       margin-bottom: 0.3rem;
+   }
+   .main{
+       width: 3.7rem;
+       height: 4.58rem;
+       border-top: 1px solid gray;
+       float: left;
+   }
+   .main:nth-child(2n-1){
+    border-right: 1px solid gray;
+   }
+   .main:nth-child(5),.main:nth-child(6){
+    border-bottom: 1px solid gray;
+   }
+   .main:nth-child(5) img{
+       margin-top: 0.3rem;
+       height: 2.7rem;
+   }
+   .sectionpic{
+       width: 100%;
+   }
+   .title{
+       display: block;
+       font-size: 0.3rem;
+       color: gray;
+       margin-left: 0.3rem;
+   }
+   .prize{
+       display: block;
+       font-size: 0.34rem;
+       font-weight: bold;
+       color: red;
+       margin-left: 0.3rem;
+   }
+   .footer{
+       width: 6.9rem;
+       margin:0 auto;
+       background-color: #fff;
+       padding-bottom: 1.5rem;
+   }
+   .footer span{
+       display: block;
+       width: 0.66rem;
+       background-color: #cda275;
+       font-size: 0.16rem;
+       line-height: 1.5;
+       text-align: center;
+       float: left;
+       margin-right: 0.2rem;
+       color: #fcfcfc;
+   }
+   .footer>h3{
+       float: left;
+       font-size: 0.3rem;
+       color: #000;
+   }
+   .footer>p{
+       display: block;
+       float: left;
+       width: 100%;
+       font-size: 0.24rem;
+       color: gray;
+       line-height: 1.5;
+       margin-bottom: 0.3rem;
+   }
+   .footer ul li{
+       width: 1.6rem;
+       float: left;
+       margin-right: 0.7rem;
+   }
+   .footer ul li img{
+       width: 1.6rem;
+}
+.footer-menu{
+            width: 100vw;
+            background-color: #f1eef5;
+            position:fixed; 
+            bottom: 0; 
+            padding: 0.1rem 0.6rem;       
+        }
+       
+        .list3 li{
+            width: 0.7rem;
+        float: left;
+        margin-right: 0.6rem;
+        font-size: 0.26rem;
+        color: #666;
+        text-align: center;
+        }
+        .list3 li a{
+            display: block;
+            padding-top: 0.8rem;
+        }
+        .list3 li:nth-child(1){
+            background-image: url(./images/block2.png);
+            background-repeat: no-repeat;
+            background-size: 0.7rem 0.7rem;
+        }
+        .list3 li:nth-child(2){
+            background-image: url(./images/block3.png);
+            background-repeat: no-repeat;
+            background-size: 0.7rem 0.7rem;
+        }
+        .list3 li:nth-child(3) a{
+            display: block;
+            width: 0.9rem;
+            padding-top: 0.9rem;
+        }
+        .list3 li:nth-child(3){
+            width: 0.9rem;
+            background-image: url(./images/footer-menu3_03.jpg);
+            background-repeat: no-repeat;
+            background-size: 0.9rem 0.9rem;
+        }
+        .list3 li:nth-child(4){
+            background-image: url(./images/mall2@2x.png);
+            background-repeat: no-repeat;
+            background-size: 0.7rem 0.7rem;
+        }
+        .list3 li:nth-child(5){
+            background-image: url(./images/block4.png);
+            background-repeat: no-repeat;
+            background-size: 0.7rem 0.7rem;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="banner">
+        <img src="./images/shopping.png" alt="">
+        </div>
+        <div class="menu">
+            <ul class="list clearfix">
+                <li>整理收纳</li>
+                <li>布艺家纺</li>
+                <li>家具</li>
+                <li>餐厨用具</li>
+                <li>清洁用具</li>
+                <li>灯具照明</li>
+                <li>水具</li>
+                <li>日常用具</li>
+            </ul>
+        </div>
+        <div class="discount">
+            <h3>限时购</h3>
+            <ul class="list1 clearfix">
+                <li><img src="./images/discount1_25.jpg" alt=""><span>￥78</span></li>
+                <li><img src="./images/discount2_25.jpg" alt=""><span>￥50</span></li>
+                <li><img src="./images/discount3_25.jpg" alt=""><span>￥62</span></li>
+            </ul>
+        </div>
+    </div>
+    <h2>住友都在买</h2>
+    <div class="section clearfix">
+    </div>
+    <div class="footer clearfix">
+        <span>专题</span>
+        <h3>早餐好物特辑</h3>
+        <p>各大美食博主都会PO的早餐，以为他们起很早么？其实都是有这些神器相助，超美早餐神奇安利给你们。</p>
+        <ul class="list2 clearfix">
+            <li> <img src="./images/footer1_96.jpg" alt=""> </li>
+            <li><img src="./images/footre2_96.jpg" alt=""></li>
+            <li><img src="./images/footer3_96.jpg" alt=""></li>
+        </ul>
+    </div>
+    <div class="footer-menu">
+        <ul class="list3 clearfix">
+            <li><a href="./comment.html"></a>首页</li>
+            <li><a href="./finish.html"></a>装修</li>
+            <li><a href="./issue.html"></a></li>
+            <li><a href="./shopping.html"></a>商城</li>
+            <li><a href="./mine.html"></a>我的</li>
+        </ul>
+    </div>
+    <script src="./js/zepto.min.js"></script>
+    <script src="./js/touch.js"></script>  
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px' 
+
+
+        var MyArr =[
+      {
+       SectionPic :"./images/main1_54.jpg",
+       title :"北欧棉麻插画抱枕",
+       prize :"￥129"
+      },
+      {
+       SectionPic :"./images/main2_55.jpg",
+       title :"创意太空摆件",
+       prize :"￥829"
+      },
+      {
+       SectionPic :"./images/main3_61.jpg",
+       title :"北欧橡木极简餐桌",
+       prize :"￥2599"
+      },
+      {
+       SectionPic :"./images/main4_62.jpg",
+       title :"创意极简黄钟表",
+       prize :"￥299"
+      },
+      {
+       SectionPic :"./images/main5_65.jpg",
+       title :"原创餐厨玻璃瓶",
+       prize :"￥29"
+      },
+      {
+       SectionPic :"./images/main6_66.jpg",
+       title :"原创设计香薰蜡烛",
+       prize :"￥89"
+      }
+  ]
+
+  MyArr.forEach(function(val,ind){
+    var NewDiv = $(`<div class="main">`)
+    NewDiv.html(`<img class="sectionpic" src=${val.SectionPic} /><h3 class="title">${val.title}</h3><p class="prize">${val.prize}</p>`)
+    $(".section").append(NewDiv)
+  })
+        </script>
+</body>
+</html>

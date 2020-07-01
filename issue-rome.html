@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/initialize.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <title>issue-rome</title>
+    <style>
+        
+        .hander{
+            width: 100vw;
+            background-color: #35b0ab;
+            text-align: center;
+            padding-bottom: 2.5rem;
+            margin-bottom: 0.2rem;
+        }
+        .close{
+            width: 0.6rem;
+            line-height: 0.5rem;
+        }
+        .close span{
+            font-size: 0.42rem;
+            color: #fff;
+        }
+        .hander h3{
+            font-size: 0.32rem;
+            color: #fff;
+            margin-bottom: 0.2rem;
+            margin-top: 0.5rem;
+        }
+        .hander p{
+            font-size: 0.26rem;
+            color: #fff;
+        }
+        .section{
+            width: 6.9rem;
+            margin: 0 auto;
+        }
+        .section ul li{
+            width: 6.9rem;
+            line-height: 0.9rem;
+            font-size: 0.26rem;
+            color: #000;
+            margin-bottom: 0.2rem;
+        }
+        .section ul li span{
+            float:right;
+            font-size: 0.3rem;
+            color:#35b0ab ;
+        }
+    </style>
+</head>
+<body>
+    <div class="hander">
+        <div class="close"><span class="iconfont icon-guanbi"></span></div>
+        <h3>房子的户型是</h3>
+        <p>不包含客厅，餐厅，厨房和洗手间</p>
+    </div>
+    <div class="section">
+        <ul>
+            <li>一室<span class="iconfont icon-qianjin"></span></li>
+            <li>二室<span class="iconfont icon-qianjin"></span></li>
+            <li>三室<span class="iconfont icon-qianjin"></span></li>
+            <li>四室<span class="iconfont icon-qianjin"></span></li>
+            <li>五室<span class="iconfont icon-qianjin"></span></li>
+            <li>五室以上<span class="iconfont icon-qianjin"></span></li>
+        </ul>
+    </div>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px' 
+       document.querySelector(".close").onclick = function(){
+           window.history.back()
+       }
+       </script>
+</body>
+</html>

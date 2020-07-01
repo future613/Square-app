@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="./css/initialize.css">
+    <title>enter</title>
+    <style>
+       
+        .warp{
+            width: 100vw;
+            height: 100vh;
+            background-image: url(./images/denglu.png);
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+            overflow: hidden;
+            
+            
+        }
+        .logo{
+            width: 1.87rem;
+            margin-bottom: 0.3rem;
+            margin: 0 auto;
+            margin-top: 1.74rem;
+            margin-bottom: 0.3rem; 
+        }
+        .logo h1 a{
+            display: block;
+            width: 1.87rem;
+            height: 1.87rem;
+            background-image: url(./images/enter-logo_07.gif);
+            background-size:100% 100%;
+            background-repeat: no-repeat; 
+            margin-bottom: 8px; 
+        }
+        .logo p{
+            text-align: center;
+          font-size:0.26rem;
+          color: #fff;
+        }
+  #user,#my-passward{
+      display: block;
+      width: 5.8rem;
+      line-height: 0.85rem;
+      background-color: #fff;
+      margin: 0 auto;
+      outline: 0;
+      padding-left: 0.8rem;
+      border-radius: 5px;
+      margin-bottom: 5px;
+  }
+  #user{
+      background-image: url(./images/user_20.jpg);
+      background-repeat: no-repeat;
+      background-position: 0.1rem center;
+      background-size: 0.46rem 0.46rem;
+  }
+  #my-passward{
+    margin-bottom: 0.42rem;
+    background-image: url(./images/enter2_03.jpg);
+      background-repeat: no-repeat;
+      background-position: 0.1rem center;
+      background-size: 0.46rem 0.46rem;
+  }
+  .enter{
+    display: block;
+      width: 6.6rem;
+      line-height: 3.26;
+      margin: 0 auto;
+      border-radius: 5px;
+      background-color: #f37b59;
+      text-align: center;
+      font-size: 0.26rem;
+      color: #fff;
+      margin-bottom: 0.2rem;
+  }
+  .warn{
+   width: 3rem;
+   margin-left: 4.3rem;
+   margin-bottom: 3rem;
+  }
+  .warn>a{
+      display: block;
+      font-size:0.26rem ;
+      color: #fff;
+      float: left;
+      margin-right: 0.3rem;
+  }
+  .list{
+      width: 3.4rem;
+      margin: 0 auto;
+      margin-bottom: 0.4rem;
+  }
+  .list li{
+      width: 0.3rem;
+      float: left;
+      margin-right: 1.2rem;
+  }
+  .list li:last-child{
+      margin-right: 0;
+  }
+  
+  .list li a span{
+      display: block;
+      font-size: 0.4rem;
+      color: #fff;
+  }
+  .accept{
+      display: block;
+      width: 7.5rem;
+      text-align: center;
+      margin:0 auto;
+      font-size: 0.16rem;
+      color: #fff;
+  }
+    </style>
+</head>
+<body>
+    <div class="warp">
+        <div class="logo">
+            <h1><a href=""></a></h1>
+            <p>欢迎回家</p>
+        </div>
+        <input class="username" id="user" type="text"placeholder="手机号/邮箱/用户名">
+        <input id="my-passward" type="passward">
+        <div id="app">
+            <a @click="visible = true" class="enter" href="#1">登录</a>
+            <el-dialog :visible.sync="visible" title="提示">
+              <p>密码错误</p>
+            </el-dialog>
+          </div>
+        <div class="warn clearfix">
+            <a href="">注册账号</a>
+            <a href="">忘记密码?</a>
+        </div>
+            <ul class="list clearfix">
+                <li><a href=""><span class="iconfont icon-weixin"></span></a></li>
+                <li><a href=""><span class="iconfont icon-qq"></span></a></li>
+                <li><a href=""><span class="iconfont icon-weibo"></span></a></li>
+            </ul>
+            <a class="accept" href="">登录代表你同意《平方用户同意》</a>
+    
+    </div>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- 引入组件库 -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script src="./js/zepto.min.js"></script>
+<script src="./js/touch.js"></script>
+    <script>
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px'
+    var Firstname = "123456789"
+    $(".username").blur(function(){
+       var username = $(this).val()
+       if(username === Firstname){
+           $(".enter").attr("href","./comment.html")   
+       }
+    })
+    
+    new Vue({
+      el: '#app',
+      data: function() {
+        return { visible: false }
+      }
+    })
+    
+</script>  
+</body>
+</html>

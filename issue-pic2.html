@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/initialize.css">
+    <title>issue-pic</title>
+    <style>
+        
+      .nav{
+          width: 6.9rem;
+          margin: 0 auto;
+          margin-bottom: 0.1rem;
+      }  
+      .list li{
+          float: left;
+          margin-right: 0.2rem;
+      }
+      .list li a{
+          font-size: 0.26rem;
+          color: #000;
+      }
+      .list li:first-child a span{
+          font-size: 0.42rem;
+          color:#35b0ab ;
+      }
+      .list li:first-child{
+          margin-top: 0.06rem;
+      }
+      .list li:nth-child(3) a span{
+        color:#35b0ab ;
+      }
+      .list li:last-child{
+         float: right;
+         margin-right: 0;
+      }
+      .banner{
+          width: 100vw;
+          margin-bottom: 1.8rem;
+      }
+      .banner>img{
+          width: 100vw;
+      }
+      .section{
+          width: 100vw;
+          text-align: center;
+          padding-bottom: 1.5rem;
+
+      }
+      .section p{
+          font-size: 0.24rem;
+          color: #333;
+          line-height: 2;
+      }
+      
+    </style>
+</head>
+<body> 
+    <div class="nav">
+        <ul class="list clearfix">
+            <li class="close"><a href="#1"><span class="iconfont icon-houtui"></span></a></li>
+            <li><a href="#1">所有图片</a></li>
+            <li><a href="#1"><span class="iconfont icon-xiala"></span></a></li>
+            <li><a href="./issue-pic3.html">继续</a></li>
+        </ul>
+    </div>
+    <div class="banner">
+        <img src="./images/issue-pic2_02.jpg" alt="">
+    </div>
+     <div class="section">
+         <p>点击图片任意位置添加标签<br>添加标签后，你的图片会更容易被人发现奥</p>
+     </div>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px' 
+       document.querySelector(".close").onclick = function(){
+           window.history.back()
+       }
+       </script>
+</body>
+</html>

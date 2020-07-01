@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/initialize.css">
+    <title>issue-text</title>
+    <style>
+        
+    .nav{
+        width: 6.9rem;
+        margin: 0 auto;
+    }
+    .list li{
+        float: right;
+        margin-left: 0.5rem;
+    }
+    .list li:first-child{
+        float: left;
+        margin-left: 0;
+    }
+    .list li a{
+        font-size: 0.26rem;
+        color: #333;
+    }
+    .banner{
+        width: 100vw;
+        margin-bottom: 0.5rem;
+    }
+    .banner>img{
+        width: 100vw;
+    }
+    .section{
+        width: 6.9rem;
+        margin: 0 auto;
+        padding-bottom: 0.5rem;
+    }
+    input{
+        display: block;
+        width: 6.7rem;
+        line-height: 0.66rem;
+        padding-left: 0.2rem;
+        outline: 0;
+        border: 1px solid #35b0ab;
+        margin-bottom: 0.3rem;
+    }
+    textarea{
+        display: block;
+        width: 6.7rem;
+        padding-left: 0.2rem;
+        padding-top: 0.2rem;
+        border: 1px solid #35b0ab;
+        resize: none;
+        outline: 0;
+    }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul class="list clearfix">
+            <li class="close"><a href="#1">关闭</a></li>
+            <li><a href="#1">保存</a></li>
+            <li><a href="#1">预览</a></li>
+            <li><a href="#1">发布</a></li>
+        </ul>
+    </div>
+    <div class="banner">
+        <img src="./images/issen-text_02.jpg" alt="">
+    </div>
+    <div class="section">
+        <input type="text" placeholder="请输入标题">
+        <textarea name="" id="" cols="30" rows="20" placeholder="请输入正文"></textarea>
+    </div>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px' 
+       document.querySelector(".close").onclick = function(){
+           window.history.back()
+       }
+       </script>
+</body>
+</html>

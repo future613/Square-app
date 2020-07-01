@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/initialize.css">
+    <title>case</title>
+    <style>
+        
+    html{
+        background-color: #f0eff5;
+    }
+       .warp{
+           width:7.5rem;
+       }
+        .head{
+            width: 6.9rem;
+            margin:0.3rem auto;
+            padding-bottom: 0.15rem;
+            border-bottom: 1px solid gray;       
+        }
+        .head ul li{
+            float: left;
+            margin-right: 0.2rem;
+            font-size: 0.38rem;
+            color: #000;
+        }
+        .head ul li span{
+            font-size: 0.36rem;
+            color: #000;
+        }
+        .head ul li:nth-child(3){
+            float: right;
+        }
+        .head ul li:nth-child(3) span{
+            font-size: 0.5rem;
+        }
+        .menu{
+            width: 6.9rem;
+            margin:0 auto;
+            padding-bottom: 0.2rem;
+            border-bottom: 1px solid gray;
+            margin-bottom: 0.3rem;
+        }
+       
+        .list1 li,.list2 li,.list3 li,.list4 li,.list5 li{
+            float: left;
+            margin-right: 0.1rem;
+            font-size: 0.16rem;
+            line-height: 2;
+            padding:0 0.2rem;
+            text-align: center;
+            color: #666;
+            margin-bottom: 0.2rem;
+            border-radius: 0.22rem;
+        }
+        .list1 li:first-child,.list2 li:first-child,.list3 li:first-child,.list4 li:first-child,.list5 li:first-child{
+            background-color: #000;
+            color: rgb(231, 231, 231);
+        }
+        .swiper-container{
+            width: 6.9rem;
+            margin:0 auto;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+        .swiper-wrapper{
+            width: 80%;
+            float: left;
+        }
+        .swiper-slide{
+            width: 80%;
+            border-radius: 8px;
+            margin-right: 0.2rem;
+        }
+        .swiper-slide img{
+            display: block;
+            width: 100%;
+            border-radius: 8px;
+           
+        }
+       
+        .section{
+            width: 6.9rem;
+            margin:0 auto;
+
+        }
+        .sectionpic{
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 0.1rem;
+        }
+        .title{
+            display: block;
+            font-size: 0.32rem;
+            color: #000;
+            margin-bottom: 0.1rem;
+            margin-left: 0.2rem;
+        }
+        .size{
+            display: block;
+            font-size: 0.24rem;
+            color: #777;
+            margin-left: 0.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="warp">
+        <div class="head">
+          <ul class="list clearfix">
+              <li class="history"><span class="iconfont icon-houtui"></span></li>
+              <li>整屋案例</li>
+              <li><span class="iconfont icon-sousuo"></span></li>
+          </ul>
+        </div>
+        <div class="menu">
+            <ul class="list1 clearfix" >
+                <li>全部</li>
+                <li>一室</li>
+                <li>两室</li>
+                <li>三室</li>
+                <li>四室</li>
+                <li>五室</li>
+                <li>六室</li>
+            </ul>
+            <ul class="list2 clearfix">
+                <li>全部</li>
+                <li>60㎡以下</li>
+                <li>60-90㎡</li>
+                <li>90-120㎡</li>
+            </ul>
+            <ul class="list3 clearfix">
+                <li>全部</li>
+                <li>北欧</li>
+                <li>日式</li>
+                <li>美式</li>
+                <li>中式</li>
+                <li>现代</li>
+                <li>复古</li>
+            </ul>
+            <ul class="list4 clearfix">
+                <li>全部</li>
+                <li>屋主</li>
+                <li>设计师</li>
+            </ul>
+            <ul class="list5 clearfix">
+                <li>全部</li>
+                <li>编辑精选</li>
+                <li>最多收藏</li>
+                <li>最多分享</li>
+            </ul>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide clearfix"><img src="./images/0003_05.png" alt=""></div> 
+                <div class="swiper-slide clearfix"><img src="./images/0003_03.png" alt=""></div> 
+                <div class="swiper-slide clearfix"><img src="./images/003_06.png" alt=""></div>            
+                <div class="swiper-slide clearfix"><img src="./images/guanzhu_03.png" alt=""></div>
+            </div>
+        </div>
+        <div class="section"></div>
+    </div>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/zepto.min.js"></script>
+    <script src="./js/touch.js"></script>  
+    <script>
+         document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px' 
+        document.querySelector(".history").onclick = function(){
+            window.history.back()
+        }
+
+        var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1.5,
+    spaceBetween: 0,
+    freeMode: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+
+
+  var MyArr =[
+      {
+       SectionPic :"./images/case1_03.jpg",
+       title :"惬意舒适的美式两居",
+       size :"二室·89平米"
+      },
+      {
+       SectionPic :"./images/case1_03.jpg",
+       title :"石材打造奢华大三居",
+       size :"三室·158平米"
+      }
+  ]
+
+  MyArr.forEach(function(val,ind){
+    var NewDiv = $("<div>")
+    NewDiv.html(`<img class="sectionpic" src=${val.SectionPic} /><h3 class="title">${val.title}</h3><p class="size">${val.size}</p>`)
+    $(".section").append(NewDiv)
+    NewDiv.css({marginBottom:"0.8rem",backgroundColor:"#fff",borderRadius: "8px",paddingBottom:"0.2rem"})
+  })
+    </script>
+</body>
+</html>

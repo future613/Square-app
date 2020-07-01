@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/initialize.css">
+    <title>create</title>
+    <style>
+      
+    html{
+        background-color: #f0eff5;
+    }
+        .head{
+            width: 6.9rem;
+            margin:0.3rem auto;
+            padding-bottom: 0.15rem;
+            border-bottom: 1px solid gray;
+            
+           
+        }
+        .head ul li{
+            float: left;
+            margin-right: 0.2rem;
+            font-size: 0.38rem;
+            color: #000;
+        }
+        .head ul li span{
+            font-size: 0.36rem;
+            color: #000;
+        }
+        .head ul li:nth-child(2){
+            margin-right: 4.1rem;
+        }
+        .nav{
+            width: 6.9rem;
+            margin:0 auto;
+            margin-bottom: 0.3rem;
+        }
+        .nav ul li{
+            float: left;
+            margin-right: 0.2rem;
+            padding:0 0.2rem;
+            font-size: 0.16rem;
+            color:#fcfcfc;
+            background-color: #000;
+            line-height: 2;
+            text-align: center;
+        }
+        .banner{
+            width: 6.9rem;
+            margin: 0 auto;
+        }
+        .banner p{
+            display: block;
+          font-size: 0.3rem;
+          color: #000;
+          margin-bottom: 0.2rem;
+        }
+        .banner>img{
+            width: 100%;
+            margin-bottom: 0.2rem;
+        }
+        .banner>ul {
+            width: 5.6rem;
+        }
+        .banner>ul li{
+            padding: 0 0.2rem;
+            float: left;
+            margin-right: 0.1rem;
+            font-size: 0.16rem;
+            line-height: 2;
+            background-color: #000;
+            color: silver;
+            margin-bottom: 0.1rem;
+        }
+        .banner>ul li:nth-child(6n){
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="warp">
+        <div class="head">
+            <ul class="list clearfix">
+                <li class="history"><span class="iconfont icon-houtui"></span></li>
+                <li>智能生成</li>
+                <li><span class="iconfont icon-scan"></span></li>
+            </ul>
+        </div>
+        <div class="nav">
+            <ul class="list1 clearfix">
+                <li>简约</li>
+                <li>北欧</li>
+                <li>铁艺</li>
+                <li>生成关键词</li>
+            </ul>
+        </div>
+        <div class="banner">
+            <p>生成结果</p>
+            <img src="./images/create_03.jpg" alt="">
+            <ul class="list2 clearfix">
+                <li>简约</li>
+                <li>美式</li>
+                <li>欧式</li>
+                <li>中式</li>
+                <li>日式</li>
+                <li>复式</li>
+                <li>复古</li>
+                <li>现代</li>
+                <li>工业</li>
+                <li>卡通</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px' 
+        document.querySelector(".history").onclick = function(){
+            window.history.back()
+        }
+    </script>
+</body>
+</html>  

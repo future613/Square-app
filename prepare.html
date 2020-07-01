@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/initialize.css">
+    <title>prepare</title>
+    <style>
+       
+        html{
+          background-color: #f0eff5;
+        }
+        .warp{
+            padding-bottom: 100px;
+        }
+        .header{
+            width: 100vw;
+            position: relative;
+        }
+        .header>img{
+            width: 100vw;
+        }
+        .header>ul{
+            width: 6.9rem;
+            position: absolute;
+            left: 0.3rem;          
+            top:0.5rem;
+            z-index: 10;
+        }
+        .header>ul li{
+            width: 0.66rem;
+        }
+        .header>ul li a{
+            display: block;
+            line-height: 0.66rem;
+           background-color:rgba(255, 255, 255 ,0.2);
+            border-radius: 50%;
+            text-align: center;
+        }
+        .header>ul li:first-child{
+            float: left;
+        }
+        .header>ul li:last-child{
+            float: right;
+        }
+        .header>ul li span{
+            display: block;
+           font-size: 0.4rem;
+           color: #fff;
+           z-index: 100;
+        }
+        .header>p{
+            position: absolute;
+            bottom: 0.5rem;
+            left: 0.3rem;
+            font-size: 0.4rem;
+            color: #fff;
+        }
+        .warp>p{
+            display: block;
+            width: 6.9rem;
+            margin: 0 auto;
+            font-size: 0.24rem;
+            line-height: 1.5;
+            color: gray;
+            margin-bottom: 0.5rem;
+        }
+        .section-one{
+            width: 6.9rem;
+            margin:0 auto;
+        }
+        .sectionpic{
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 0.1rem;
+        }
+        .title{
+            display: block;
+            font-size: 0.32rem;
+            color: #000;
+            margin-bottom: 0.15rem;
+            margin-left: 0.2rem;
+        }
+        .headpic{
+            display: block;
+            float: left;
+            width: 0.42rem;
+            border-radius: 50%;
+            margin-left: 0.2rem;
+            margin-right: 0.2rem;
+        }
+        .name{
+            display: block;
+            float: left;
+            font-size: 0.24rem;
+            color: #000;
+            margin-left: 0.2rem;
+            margin-top: 2px;
+        }
+        .section-two{
+            width: 6.9rem;
+            margin:0 auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+            margin-bottom: 0.5rem;
+        }
+        .main1{
+            padding: 0.3rem 0.3rem;
+            border-bottom: 1px solid gray;
+        }
+        .main1:last-child{
+            border-bottom: none; 
+        }
+        .title1{
+            display: block;
+            width: 4.1rem;
+            font-size: 0.36rem;
+            color: #000; 
+            margin-bottom: 0.2rem;          
+        }
+        .sectionpic1{
+            display: block;
+            width: 1.75rem;
+            float: right;
+            margin-right: 0.3rem;
+        }
+        .arrcontant{
+            display: block;
+            width: 4.1rem;
+            font-size: 0.3rem;
+            color: #000;
+            line-height: 1.5;
+            margin-bottom: 0.2rem;
+        }
+        .answer span{
+            font-size: 0.26rem;
+            color: gray;
+            margin-right: 0.2rem; 
+        }
+        .answer{
+            font-size: 0.26rem;
+            color: gray;
+            margin-right: 0.3rem;
+            float: left;
+        }
+        .attention span{
+            font-size: 0.26rem;
+            color: gray;
+            margin-right: 0.2rem; 
+        }
+        .attention{
+            font-size: 0.26rem;
+            color: gray;
+            margin-right: 0.3rem;
+            line-height: 1.2;
+            float: left;
+        }
+        .comment span{
+            font-size: 0.26rem;
+            color: gray;
+            margin-right: 0.2rem; 
+        }
+        .comment{
+            font-size: 0.26rem;
+            color: gray;
+            float: left;
+        }
+        .section-three{
+            width: 6.9rem;
+            margin: 0 auto;
+            margin-bottom: 0.5rem;
+        }
+        .section-three h3,.section-one h3,.section-four h3,.warp>h3{
+            font-size: 0.32rem;
+            color: #000;
+            margin-bottom: 0.2rem;
+        }
+        .warp>h3{
+            margin-left: 0.3rem;
+        }
+        .section-three img{
+            width: 1.77rem;
+            float: left;
+            margin-left: 0.1rem;
+            border-radius: 10px;
+            margin-bottom: 0.15rem;
+        }
+        .section-three img:nth-child(2){
+            width: 5.03rem;
+            margin-left: 0;
+        }
+        .section-four{
+            width: 6.9rem;
+            margin:0 auto;   
+        }
+        .main2{
+            padding: 0.5rem 0.3rem;
+            box-shadow: 0 0 10px gray;
+            margin-bottom: 0.3rem; 
+            border-radius: 10px;
+        }
+      
+        .title2{
+            display: block;
+            width: 100vw;
+            font-size: 0.36rem;
+            color: #000; 
+            margin-bottom: 0.2rem;          
+        }
+        .sectionpic2{
+            display: block;
+            width: 1.75rem;
+            float: left;
+            margin-right: 0.3rem;
+        }
+        .arrcontant1{
+            display: block;
+            width: 4.1rem;
+            float: left;
+            font-size: 0.26rem;
+            color: gray;
+            line-height: 1.5;
+            margin-bottom: 0.2rem;
+        }
+        .answer1 span{
+            font-size: 0.26rem;
+            color: gray;
+            margin-right: 0.2rem; 
+        }
+        .answer1{
+            font-size: 0.26rem;
+            color: gray;
+            margin-right: 0.3rem;
+            float: left;
+        }
+        .attention1 span{
+            font-size: 0.26rem;
+            color: gray;
+            margin-right: 0.2rem; 
+        }
+        .attention1{
+            font-size: 0.26rem;
+            color: gray;
+            margin-right: 0.3rem;
+            line-height: 1.2;
+            float: left;
+        }
+        .comment1 span{
+            font-size: 0.26rem;
+            color: gray;
+            margin-right: 0.2rem; 
+        }
+        .comment1{
+            font-size: 0.26rem;
+            color: gray;
+            float: left;
+        }
+        .footer-menu{
+            width: 100vw;
+            background-color: #f1eef5;
+            position:fixed; 
+            bottom: 0; 
+            padding: 0.1rem 0.6rem;       
+        }
+       
+        .list3 li{
+            width: 0.7rem;
+        float: left;
+        margin-right: 0.6rem;
+        font-size: 0.26rem;
+        color: #666;
+        text-align: center;
+        }
+        .list3 li a{
+            display: block;
+            padding-top: 0.8rem;
+        }
+        .list3 li:nth-child(1){
+            background-image: url(./images/block2.png);
+            background-repeat: no-repeat;
+            background-size: 0.7rem 0.7rem;
+        }
+        .list3 li:nth-child(2){
+            background-image: url(./images/zhangxiu2@2x.png);
+            background-repeat: no-repeat;
+            background-size: 0.7rem 0.7rem;
+        }
+        .list3 li:nth-child(3) a{
+            display: block;
+            width: 0.9rem;
+            padding-top: 0.9rem;
+        }
+        .list3 li:nth-child(3){
+            width: 0.9rem;
+            background-image: url(./images/footer-menu3_03.jpg);
+            background-repeat: no-repeat;
+            background-size: 0.9rem 0.9rem;
+        }
+        .list3 li:nth-child(4){
+            background-image: url(./images/black1.png);
+            background-repeat: no-repeat;
+            background-size: 0.7rem 0.7rem;
+        }
+        .list3 li:nth-child(5){
+            background-image: url(./images/block4.png);
+            background-repeat: no-repeat;
+            background-size: 0.7rem 0.7rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="warp">
+        <div class="header">
+            <img src="./images/qianqi.png" alt="">
+            <ul class="list clearfix">
+                <li class="close"><a href="#1"><span class="iconfont icon-houtui"></span></a></li>
+                <li><a href="#1"><span class="iconfont icon-tubiao212"></span></a></li>
+            </ul>
+            <p>前期准备</p>
+        </div>
+        <p>小户型房子的装修让很多的年轻人头痛，随便装修吧不像样，新房总得有新气象。装修成豪华欧式吧，太过奢华，花销也大，重点是也不知道该怎么装修设计才能把小户型房间最大化地利用起来，今天老友就来给大家解决修成豪华欧式吧</p>
+        <div class="section-one">
+            <h3>专家经验</h3>
+        </div>
+        <h3>住友都在聊</h3>
+        <div class="section-two">
+        </div>
+        <div class="section-three clearfix">
+            <h3>图片</h3>
+            <img src="./images/prepare-sec32_10.jpg" alt="">
+            <img src="./images/prepare-sec31_14.jpg" alt="">
+            <img src="./images/prepare-sec33_15.jpg" alt="">
+        </div>
+        <div class="section-four">
+            <h3>推荐阅读</h3>
+        </div>
+        <div class="footer-menu">
+            <ul class="list3 clearfix">
+                <li><a href="./comment.html"></a>首页</li>
+                <li><a href="./finish.html"></a>装修</li>
+                <li><a href="./issue.html"></a></li>
+                <li><a href="./shopping.html"></a>商城</li>
+                <li><a href="./mine.html"></a>我的</li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/zepto.min.js"></script>
+    <script src="./js/touch.js"></script> 
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px' 
+       
+
+        var MyArr =[
+      {
+       SectionPic :"./images/prepare-sec11_03.jpg",
+       title :"如何选择适合自己的床垫",
+       headPic :"./images/prepare-head1_06.jpg",
+       name :"WILLK"
+      },
+      {
+       SectionPic :"./images/prepare-sec12_07.jpg",
+       title :"灯具选择小技巧",
+       headPic :"./images/prepare-head1_06.jpg",
+       name :"是我是我就是我"
+      }
+  ]
+
+  MyArr.forEach(function(val,ind){
+    var NewDiv = $(`<div class="main clearfix">`)
+    NewDiv.html(`<img class="sectionpic" src=${val.SectionPic} /><h3 class="title">${val.title}</h3><img class="headpic" src=${val.headPic} /><p class="name">${val.name}</p>`)
+    $(".section-one").append(NewDiv)
+    NewDiv.css({marginBottom:"0.8rem",borderRadius: "8px",paddingBottom:"0.2rem",boxShadow:"0 0 10px gray"})
+  })
+
+  var MyArr1 =[
+      {
+       title :"说说你家最特别的设计",
+       SectionPic :"./images/prepare-sec21_11.jpg",
+       contant :"在家居装修中，一屋的重中之重便是客厅的装修，可以说客厅是一家最重要的地方，并且也是一家的财运聚集",
+       answer :"23",
+       attention : "567",
+       comment :"90"
+      },
+      {
+        title :"装修签合同需要注意神么",
+        SectionPic :"./images/prepare-sec22_11.jpg",
+       contant :"在家居装修中，一屋的重中之重便是客厅的装修，可以说客厅是一家最重要的地方，并且也是一家的财运聚集",
+       answer :"78",
+       attention : "895",
+       comment :"98"
+      }
+    ]
+    MyArr1.forEach(function(val,ind){
+    var NewDiv = $(`<div class="main1 clearfix ">`)
+    NewDiv.html(`<h3 class="title1">${val.title}</h3><img class="sectionpic1" src=${val.SectionPic} /><p class="arrcontant"">${val.contant}</p><li class="answer"><span>赞</span>${val.answer}</li><li class="attention"><span>收藏</span>${val.attention}</li><li class="comment"><span>评论</span>${val.comment}</li>`)
+    $(".section-two").append(NewDiv)
+  })
+
+
+
+  var MyArr2 =[
+      {
+       title :"装修是场硬仗，千万别栽在合同上",
+       SectionPic :"./images/prepare-sec41_15.jpg",
+       contant :"在家居装修中，一屋的重中之重便是客厅的装修，可以说客厅是一家最重要的地方。",
+       answer :"58",
+       attention : "995",
+       comment :"78"
+      },
+      {
+        title :"住友力荐:十本必读的实用家具书",
+        SectionPic :"./images/prepare-sec42_15.jpg",
+       contant :"在家居装修中，一屋的重中之重便是客厅的装修，可以说客厅是一家最重要的地方。",
+       answer :"98",
+       attention : "983",
+       comment :"68"
+      }
+    ]
+    MyArr2.forEach(function(val,ind){
+    var NewDiv = $(`<div class="main2 clearfix ">`)
+    NewDiv.html(`<h3 class="title2">${val.title}</h3><img class="sectionpic2" src=${val.SectionPic} /><p class="arrcontant1"">${val.contant}</p><li class="answer1"><span>赞</span>${val.answer}</li><li class="attention1"><span>收藏</span>${val.attention}</li><li class="comment1"><span>评论</span>${val.comment}</li>`)
+    $(".section-four").append(NewDiv)
+  })
+  document.querySelector(".close").onclick = function(){
+            window.history.back()
+  }
+</script>  
+</body>
+</html>

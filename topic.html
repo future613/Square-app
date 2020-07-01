@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/initialize.css">
+    <title>topic</title>
+    <style>
+
+    html{
+        background-color: #f0eff5;
+    }
+       .warp{
+           width:7.5rem;
+           padding-bottom: 1rem;
+       }
+        .head{
+            width: 6.9rem;
+            margin:0.3rem auto;
+            padding-bottom: 0.15rem;
+            border-bottom: 1px solid gray;
+            
+           
+        }
+        .head ul li{
+            float: left;
+            margin-right: 0.2rem;
+            font-size: 0.38rem;
+            color: #000;
+        }
+        .head ul li span{
+            font-size: 0.36rem;
+            color: #000;
+        }
+        .head ul li:nth-child(3){
+            float: right;
+        }
+        .head ul li:nth-child(3) span{
+            font-size: 0.5rem;
+        }
+        .banner{
+            width: 100vw;
+        }
+        .banner>img{
+            width: 100vw;
+            margin-bottom: 0.2rem;
+        }
+        .menu{
+            width: 6.9rem;
+            margin:0 auto;
+            margin-bottom: 0.5rem;
+        }
+        .list li{
+            float: left;
+            margin-right: 0.5rem;
+            font-size: 0.3rem;
+            color: #333;
+        }
+        .warp .menu .color{
+          font-weight: bold;  
+          color: #000;
+        }
+        .section{
+            width: 6.9rem;
+            margin: 0 auto;
+        }
+        .main{
+            padding: 0.3rem 0.3rem;
+            box-shadow: 0 0 10px lightgray;
+            margin-bottom: 0.3rem;
+            border-radius: 10px;
+        }
+        .title{
+            display: block;
+            width: 100%;
+            font-size: 0.36rem;
+            color: #000; 
+            margin-bottom: 0.2rem;          
+        }
+        .arrcontant{
+            display: block;
+            width: 100%;
+            font-size: 0.3rem;
+            color: #000;
+            line-height: 1.5;
+            margin-bottom: 0.2rem;
+        }
+        .answer span{
+            font-size: 0.26rem;
+            color: gray;
+            margin-right: 0.2rem; 
+        }
+        .answer{
+            font-size: 0.26rem;
+            color: gray;
+            margin-right: 0.6rem;
+            float: left;
+        }
+        .attention span{
+            font-size: 0.26rem;
+            color: gray;
+            margin-right: 0.2rem; 
+        }
+        .attention{
+            font-size: 0.26rem;
+            color: gray;
+            float: left;
+        }
+        .footer-menu{
+            width: 100vw;
+            background-color: #f1eef5;
+            position:fixed; 
+            bottom: 0; 
+            padding: 0.1rem 0.6rem;       
+        }
+       
+        .list3 li{
+            width: 0.7rem;
+        float: left;
+        margin-right: 0.6rem;
+        font-size: 0.26rem;
+        color: #666;
+        text-align: center;
+        }
+        .list3 li a{
+            display: block;
+            padding-top: 0.8rem;
+        }
+        .list3 li:nth-child(1){
+            background-image: url(./images/index2@2x.png);
+            background-repeat: no-repeat;
+            background-size: 0.7rem 0.7rem;
+        }
+        .list3 li:nth-child(2){
+            background-image: url(./images/block3.png);
+            background-repeat: no-repeat;
+            background-size: 0.7rem 0.7rem;
+        }
+        .list3 li:nth-child(3) a{
+            display: block;
+            width: 0.9rem;
+            padding-top: 0.9rem;
+        }
+        .list3 li:nth-child(3){
+            width: 0.9rem;
+            background-image: url(./images/footer-menu3_03.jpg);
+            background-repeat: no-repeat;
+            background-size: 0.9rem 0.9rem;
+        }
+        .list3 li:nth-child(4){
+            background-image: url(./images/black1.png);
+            background-repeat: no-repeat;
+            background-size: 0.7rem 0.7rem;
+        }
+        .list3 li:nth-child(5){
+            background-image: url(./images/block4.png);
+            background-repeat: no-repeat;
+            background-size: 0.7rem 0.7rem;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="warp">
+    <div class="head">
+      <ul class="list clearfix">
+          <li class="history"><span class="iconfont icon-houtui"></span></li>
+          <li>话题讨论</li>
+          <li><span class="iconfont icon-sousuo"></span></li>
+      </ul>
+    </div>
+      <div class="banner">
+          <img src="./images/topic_03.jpg" alt="">
+      </div>
+      <div class="menu">
+          <ul class="list clearfix">
+              <li>全部话题</li>
+              <li>装修经验</li>
+              <li>收纳心得</li>
+              <li>好物测评</li>
+          </ul>
+      </div>
+      <div class="section">
+      <div class="contant"></div>
+      <div class="contant"></div>
+      <div class="contant"></div>
+      <div class="contant"></div>
+    </div>
+    <div class="footer-menu">
+        <ul class="list3 clearfix">
+            <li><a href="./comment.html"></a>首页</li>
+            <li><a href="./finish.html"></a>装修</li>
+            <li><a href="./issue.html"></a></li>
+            <li><a href="./shopping.html"></a>商城</li>
+            <li><a href="./mine.html"></a>我的</li>
+        </ul>
+    </div>
+</div> 
+<script src="./js/zepto.min.js"></script>
+<script src="./js/touch.js"></script>
+<script src="./js/selector.js"></script> 
+<script>
+      document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px' 
+        document.querySelector(".history").onclick = function(){
+            window.history.back()
+        }
+
+
+        var MyArr =[
+      {
+       title :"长方形客厅如何装修",
+       contant :"在家居装修中，一屋的重中之重便是客厅的装修，可以说客厅是一家最重要的地方，并且也是一家的财运聚集",
+       answer :"98",
+       attention : "1956"
+      },
+      {
+        title :"室内装修材料怎样选择",
+       contant :"在家居装修中，一屋的重中之重便是客厅的装修，可以说客厅是一家最重要的地方，并且也是一家的财运聚集",
+       answer :"668",
+       attention : "1586"
+      },
+      {
+        title :"大门对着厕所怎么装修",
+       contant :"在家居装修中，一屋的重中之重便是客厅的装修，可以说客厅是一家最重要的地方，并且也是一家的财运聚集",
+       answer :"113",
+       attention : "6528"
+      },
+      {
+        title :"除甲醛最有效的方法有哪些",
+       contant :"在家居装修中，一屋的重中之重便是客厅的装修，可以说客厅是一家最重要的地方，并且也是一家的财运聚集",
+       answer :"236",
+       attention : "3652"
+      },
+      {
+        title :"入门即学问 门厅过道装修与风水禁忌",
+       contant :"在家居装修中，一屋的重中之重便是客厅的装修，可以说客厅是一家最重要的地方，并且也是一家的财运聚集",
+       answer :"165",
+       attention : "1586"
+      }
+  ]
+  
+var MyArr1 = MyArr.filter(function(val){
+   var title1 = val.answer
+  return title1 > 200  
+})
+var MyArr2 = MyArr.filter(function(val){
+   var title1 = val.answer
+  return title1 > 500  
+})
+var MyArr3 = MyArr.filter(function(val){
+   var title1 = val.answer
+  return title1 < 200  
+})
+
+
+  MyArr.forEach(function(val,ind){
+    var NewDiv = $(`<div class="main clearfix ">`)
+    NewDiv.html(`<h3 class="title">${val.title}</h3><p class="arrcontant"">${val.contant}</p><li class="answer"><span>回答</span>${val.answer}</li><li class="attention"><span>关注</span>${val.attention}</li>`)
+    $(".contant:first-child").append(NewDiv)
+  })
+  MyArr1.forEach(function(val,ind){
+    var NewDiv = $(`<div class="main clearfix ">`)
+    NewDiv.html(`<h3 class="title">${val.title}</h3><p class="arrcontant"">${val.contant}</p><li class="answer"><span>回答</span>${val.answer}</li><li class="attention"><span>关注</span>${val.attention}</li>`)
+    $(".contant:nth-child(2)").append(NewDiv)
+  })
+  MyArr2.forEach(function(val,ind){
+    var NewDiv = $(`<div class="main clearfix ">`)
+    NewDiv.html(`<h3 class="title">${val.title}</h3><p class="arrcontant"">${val.contant}</p><li class="answer"><span>回答</span>${val.answer}</li><li class="attention"><span>关注</span>${val.attention}</li>`)
+    $(".contant:nth-child(3)").append(NewDiv)
+  })
+  MyArr3.forEach(function(val,ind){
+    var NewDiv = $(`<div class="main clearfix ">`)
+    NewDiv.html(`<h3 class="title">${val.title}</h3><p class="arrcontant"">${val.contant}</p><li class="answer"><span>回答</span>${val.answer}</li><li class="attention"><span>关注</span>${val.attention}</li>`)
+    $(".contant:nth-child(4)").append(NewDiv)
+  })
+ 
+
+  $(".contant:first-child").show().siblings(".contant").hide();
+  $(".menu ul li:first-child").addClass("color").siblings().removeClass("color")
+  $(".menu ul li").tap(function(){
+   var ind = $(this).index()
+   $(this).addClass("color").siblings().removeClass("color")
+   $(".contant").eq(ind).show().siblings(".contant").hide();
+  })
+</script> 
+</body>
+</html>

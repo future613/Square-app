@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/initialize.css  ">
+    <title>look</title>
+    <style>
+ 
+    html{
+        background-color: #f0eff5;
+    }
+       .warp{
+           width:7.5rem;
+       }
+        .head{
+            width: 6.9rem;
+            margin:0.3rem auto;
+            padding-bottom: 0.15rem;
+            border-bottom: 1px solid gray;
+            
+           
+        }
+        .head ul li{
+            float: left;
+            margin-right: 0.2rem;
+            font-size: 0.38rem;
+            color: #000;
+        }
+        .head ul li span{
+            font-size: 0.36rem;
+            color: #000;
+        }
+        .head ul li:nth-child(3){
+            float: right;
+        }
+        .head ul li:nth-child(3) span{
+            font-size: 0.5rem;
+        }
+        .menu{
+            width: 6.9rem;
+            margin:0 auto;
+            padding-bottom: 0.2rem;
+            border-bottom: 1px solid gray;
+            margin-bottom: 0.3rem;
+        }
+        .list1{
+            width: 6.9rem;
+        }
+        .list1 li,.list2 li{
+            float: left;
+            margin-right: 0.1rem;
+            font-size: 0.16rem;
+            line-height: 2;
+            padding:0 0.18rem;
+            text-align: center;
+            color: #666;
+            margin-bottom: 0.2rem;
+            border-radius: 0.22rem;
+        }
+        .list1 li:first-child,.list2 li:first-child{
+            background-color: #000;
+            color: #fff;
+        }
+        .section{
+            width: 6.9rem;
+            margin:0 auto;
+        }
+        .section-left{
+            width: 3.3rem;
+            margin-right: 0.3rem;
+            float: left;
+        }
+        .section-right{
+            width: 3.3rem;
+            float: left;
+        }
+ .sectionpic{
+     width: 3.3rem;
+     border-radius: 8px;
+ }
+ .contant{
+     display: block;
+     width: 3.3rem;
+     font-size: 0.28rem;
+     line-height: 1.5;
+     color: #000;
+     margin-bottom: 0.12rem;
+ }
+ .headpic{
+     display: block;
+     float: left;
+     margin-right: 0.3rem;
+     width: 0.32em;
+     border-radius: 50%;
+     margin-top: 2px;
+ }
+ .headname{
+     display: block;
+     float: left;
+     font-size: 0.26rem;
+     color: #000;
+     margin-right: 1.1rem;
+ }
+ .dianzan{
+     font-size: 0.26rem;
+ }
+ .dianzan>span{
+     font-size: 0.36rem;
+     margin-right: 0.2rem;
+ }
+ .dianzan>p{
+     float:right;
+ }
+    </style>
+
+
+</head>
+<body>
+  <div class="warp">
+      <div class="head">
+        <ul class="list clearfix">
+            <li class="history"><span class="iconfont icon-houtui"></span></li>
+            <li>看图片</li>
+            <li><span class="iconfont icon-sousuo"></span></li>
+        </ul>
+      </div>
+      <div class="menu">
+          <ul class="list1 clearfix" >
+              <li>全部</li>
+              <li>客厅</li>
+              <li>餐厅</li>
+              <li>卧室</li>
+              <li>厨房</li>
+              <li>书房</li>
+              <li>卫生间</li>
+          </ul>
+          <ul class="list2 clearfix">
+              <li>全部</li>
+              <li>北欧</li>
+              <li>日式</li>
+              <li>美式</li>
+              <li>中式</li>
+              <li>现代</li>
+              <li>复古</li>
+          </ul>
+      </div>
+      <div class="section clearfix">
+          <div class="section-left"></div>
+          <div class="section-right"></div>
+      </div>
+  </div>
+  <script src="./js/zepto.min.js"></script>
+<script src="./js/touch.js"></script>  
+  <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px' 
+        document.querySelector(".history").onclick = function(){
+            window.history.back()
+        }
+
+        var MyArr = [
+            {
+              SectionPic :"./images/look1_03.jpg",
+              contant :"随着时代的发展，建筑材料层出不穷",
+              headPic :"./images/lookhead1_13.jpg",
+              headName:"小明",
+              DianZan :"888"
+            },
+            {
+              SectionPic :"./images/look4_07.jpg",
+              contant :"随着时代的发展，建筑材料层出不穷",
+              headPic :"./images/lookhead1_13.jpg",
+              headName:"小红",
+              DianZan :"222"
+            },
+            {
+              SectionPic :"./images/look5_10.jpg",
+              contant :"随着时代的发展，建筑材料层出不穷",
+              headPic :"./images/lookhead1_13.jpg",
+              headName:"小黑",
+              DianZan :"300"
+            }
+        ]
+        var MyArr1 = [
+            {
+              SectionPic :"./images/look2_03.jpg",
+              contant :"随着时代的发展，建筑材料层出不穷",
+              headPic :"./images/lookhead1_13.jpg",
+              headName:"小张",
+              DianZan :"220"
+            },
+            {
+              SectionPic :"./images/look3_07.jpg",
+              contant :"随着时代的发展，建筑材料层出不穷",
+              headPic :"./images/lookhead1_13.jpg",
+              headName:"小李",
+              DianZan :"22"
+            },
+            {
+              SectionPic :"./images/look6_07.jpg",
+              contant :"随着时代的发展，建筑材料层出不穷",
+              headPic :"./images/lookhead1_13.jpg",
+              headName:"小王",
+              DianZan :"230"
+            }
+        ]
+        MyArr.forEach(function(val,ind){
+      NewDiv = $("<div>")
+        NewDiv.html(`<img class="sectionpic" src=${val.SectionPic} /><p class="contant">${val.contant}</p><img class="headpic" src=${val.headPic} /><span class="headname" >${val.headName}</span><li class="dianzan"><span class="iconfont icon-dianzan"></span><p>${val.DianZan}</p></li>`)
+         $(".section-left").append(NewDiv)
+         NewDiv.css("margin-bottom","0.8rem")
+        })
+        MyArr1.forEach(function(val,ind){
+      NewDiv1 = $("<div>")
+        NewDiv1.html(`<img class="sectionpic" src=${val.SectionPic} /><p class="contant">${val.contant}</p><img class="headpic" src=${val.headPic} /><span class="headname" >${val.headName}</span><li class="dianzan"><span class="iconfont icon-dianzan"></span><p>${val.DianZan}</p></li>`)
+         $(".section-right").append(NewDiv1)
+         NewDiv1.css("margin-bottom","0.8rem")
+        })
+
+
+var TheTurn = false
+ $(".dianzan span").tap(function(){
+if(!TheTurn){
+  $(this).css("color","#c96036")
+  var num = $(this).siblings("p").text()
+  num++;
+  $(this).siblings("p").text(num)
+  TheTurn = true
+      }
+      else{
+        $(this).css("color","#000")
+  var num = $(this).siblings("p").text()
+  num--;
+  $(this).siblings("p").text(num)
+  TheTurn = false  
+      }
+  })
+  </script>
+</body>
+</html>
